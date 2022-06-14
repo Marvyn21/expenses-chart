@@ -22,20 +22,26 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 400px;
     height: 450px;
-    
+    display: grid;
+}
+.image-div{
+    display: flex;
+    float: right;
+    padding-bottom: 30px;
 }
 .header{
     padding:15px;
     border-radius: 10px;
     font-family: var(--main-font);
     color: var(--Cream);
-    height: 80px;
+    height: 100px;
     background-color: var(--soft-red);
     align-items: center;
     justify-content: center;
+    /* column-gap: 20px; */
 }
 .header span{
     font-weight: bolder;
@@ -43,5 +49,6 @@ body{
 .body{
     padding: 15px;
     background-color: var(--Very-pale-orange);
-    height: 80%;
+    height: 330px;
+    border-radius: 14px;
 }
