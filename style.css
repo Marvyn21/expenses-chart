@@ -22,12 +22,11 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* border: 2px solid red; */
-    width: 400px;
+    width: 600px;
     height: 450px;
     display: grid;
 }
-.image-div{
+.header .image-div{
     display: flex;
     float: right;
     padding-bottom: 30px;
@@ -41,7 +40,6 @@ body{
     background-color: var(--soft-red);
     align-items: center;
     justify-content: center;
-    /* column-gap: 20px; */
 }
 .header span{
     font-weight: bolder;
@@ -51,4 +49,63 @@ body{
     background-color: var(--Very-pale-orange);
     height: 330px;
     border-radius: 14px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.footer .footer-left p{
+    color: #adadad;
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+}
+
+.footer .foooter-left h2{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.footer .footer-right{
+    margin-bottom: 5px;
+}
+
+.footer .footer-right p.percent{
+    color: #000;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: right;
+
+}
+
+.footer .footer-right p.last-month{
+    color: #adadad;
+    letter-spacing: 0.3px;
+    font-size: 1rem;
+
+}
+
+
+
+@media only screen and (max-width:500px){
+    .main-body .header, .main-body .body{
+        padding: 1rem;
+        border-radius: 0.7rem;
+
+    }
+
+    .chart-box .column{width: 45px;}
+}
+@media only screen and (max-width:400px){
+
+    .main-body .header, .main-body .body{
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+
+    }
+
+    .chart-box .column{width: 4px;}
+
 }
