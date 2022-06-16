@@ -22,24 +22,24 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 600px;
+    width: 650px;
     height: 450px;
     display: grid;
-}
-.header .image-div{
-    display: flex;
-    float: right;
-    padding-bottom: 30px;
+    grid-gap: 20px;
 }
 .header{
-    padding:15px;
+    padding: 25px;
     border-radius: 10px;
     font-family: var(--main-font);
     color: var(--Cream);
     height: 100px;
     background-color: var(--soft-red);
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    display: flex;
+}
+.header .image-div{
+    width: 50px;
 }
 .header span{
     font-weight: bolder;
@@ -47,7 +47,6 @@ body{
 .body{
     padding: 15px;
     background-color: var(--Very-pale-orange);
-    height: 330px;
     border-radius: 14px;
 }
 .footer{
